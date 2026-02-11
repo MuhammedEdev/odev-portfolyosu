@@ -1,36 +1,49 @@
 # 🚀 MUHAMMED EDEV | WEB GELİŞTİRME PORTFOLYOSU
 
-Bu depo, 2025-2026 eğitim dönemi boyunca hazırladığım tüm web tasarım ve framework projelerini kapsamaktadır.
+Bu depo, 2025-2026 eğitim dönemi boyunca hazırladığım tüm projeleri, teknik ödevleri ve uygulama çalışmalarını kapsamaktadır. Tüm dosyalar modüler yapıda ve ders içeriklerine uygun olarak kategorize edilmiştir.
 
 ---
 
-## 📂 PROJE VE ÖDEV DİZİNLERİ
+## 📂 ANA PROJE DİZİNLERİ
 
-Tüm kaynak kodlarına aşağıdaki ana klasörler üzerinden erişebilirsiniz:
+Aşağıdaki iki ana bölüm, geliştirme sürecimdeki temel ve ileri seviye çalışmaları temsil etmektedir:
 
 ### 🌐 1. Web Tabanlı Uygulama Geliştirme
-Bu klasörde HTML5 ve CSS3 standartları kullanılarak geliştirilen haftalık ödevler yer almaktadır.
-* **Klasör Adı:** `web-tabanlı-uygulama-geliştirme-odevleri`
-* **İçerik:** Semantik HTML, CSS Flexbox/Grid mizanpajları ve responsive çözümler.
-* **Erişim:** Klasör içindeki haftalık dizinlerden (`odev-1`, `odev-2` vb.) kaynak kodlara ulaşılabilir.
+Web teknolojilerinin temel taşlarını ve modern arayüz standartlarını kapsayan bölümdür.
+* **Klasör Yolu:** `web-tabanlı-uygulama-geliştirme-odevleri/`
+* **Kapsam:** HTML5 Yapısı, CSS3 Tasarımı, Flexbox & Grid Sistemleri, Responsive Uyumluluk.
+* **İçerik:** Haftalık bazda ilerleyen semantik kodlama ve arayüz mizanpaj çalışmaları.
+* **Kullanım:** İlgili dizindeki `index.html` dosyasını tarayıcıda çalıştırarak inceleyebilirsiniz.
+
+---
 
 ### ⚛️ 2. JavaScript Frameworkleri (React)
-Modern frontend mimarileri ve bileşen tabanlı geliştirme süreçlerini içeren projelerdir.
-* **Klasör Adı:** `js-frameworkleri-odevler`
-* **İçerik:** React.js kütüphanesi, State yönetimi ve dinamik arayüz bileşenleri.
+Modern web mimarileri ve bileşen tabanlı uygulama geliştirme süreçlerini kapsayan bölümdür.
+* **Klasör Yolu:** `js-frameworkleri-odevler/`
+* **Kapsam:** React.js Kütüphanesi, JSX Yapısı, Hooks, State Yönetimi, Component Mimarisi.
+* **İçerik:** Dinamik kullanıcı arayüzleri, veri yönetimi ve modern frontend uygulama geliştirme.
+* **Kullanım:** Proje klasöründe `npm install` ve `npm start` komutlarını kullanarak çalıştırabilirsiniz.
 
 ---
 
-## 🛠️ TEKNİK DONANIM
-* **Diller:** HTML5, CSS3, JavaScript (ES6+)
-* **Framework:** React.js
-* **Araçlar:** Git, GitHub, VS Code
+## 🛠️ TEKNİK YETKİNLİKLER VE ARAÇLAR
+
+Aşağıdaki tablo, bu projelerin geliştirilme sürecinde kullanılan teknoloji yığınını göstermektedir:
+
+| KATEGORİ | KULLANILAN TEKNOLOJİLER |
+| :--- | :--- |
+| **Diller** | HTML5, CSS3, JavaScript (ES6+) |
+| **Frameworkler** | React.js, Vite |
+| **Tasarım Yapısı** | Flexbox, CSS Grid, Responsive Design |
+| **Geliştirme Araçları** | VS Code, Git, GitHub |
 
 ---
 
-## 📖 ÇALIŞTIRMA VE İNCELEME
-* **Statik Projeler:** İlgili ödev klasöründeki `index.html` dosyasını tarayıcıda açarak görüntüleyebilirsiniz.
-* **React Projeleri:** Proje klasöründe `npm install` ve `npm start` komutlarını kullanarak çalıştırabilirsiniz.
+## 👨‍💻 GELİŞTİRİCİ VE SİSTEM BİLGİSİ
+
+* **Geliştirici:** MuhammedEdev
+* **Dönem:** 2025 - 2026 Eğitim Yılı
+* **Durum:** Projeler aktif olarak güncellenmektedir.
 
 ---
-**Geliştirici:** MuhammedEdev | 2026
+> **BİLGİ:** Bu depodaki tüm projeler eğitim amaçlı geliştirilmiş olup açık kaynaklıdır.
