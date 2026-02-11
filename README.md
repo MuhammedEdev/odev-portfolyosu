@@ -25,4 +25,4 @@ HTML5, CSS3 ve temel JavaScript prensipleriyle hazırlanan web projeleri.
 3. Projeyi ayağa kaldırın: `npm run dev`
 
 ---
-**Muhammed Edev** *Geliştirici Adayı*
+**MuhammedEdev** *Geliştirici Adayı*
