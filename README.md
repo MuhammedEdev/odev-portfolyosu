@@ -1,38 +1,42 @@
-# 🚀 Muhammed Edev | Geliştirme Portfolyosu
+# 🚀 Muhammed Edev | Web Geliştirme Portfolyosu
 
-Bu depo, **2025-2026** eğitim dönemi boyunca hazırladığım web projelerini ve ödevlerimi içermektedir. Hem temel web teknolojileri hem de modern JavaScript frameworkleri üzerine yaptığım çalışmaları burada bulabilirsiniz.
+Bu depo, 2025-2026 eğitim dönemi boyunca **Web Tabanlı Uygulama Geliştirme** ve **JS Frameworkleri** derslerinde hazırladığım tüm projeleri ve ödevleri kapsamaktadır. 
 
 ---
 
-## 🌐 Web Tabanlı Uygulama Geliştirme (Canlı Önizleme)
-*Aşağıdaki linklere tıklayarak hazırladığım projeleri doğrudan tarayıcınızda görüntüleyebilirsiniz.*
+## 🌐 Web Tabanlı Uygulama Geliştirme (Canlı Projeler)
+*Aşağıdaki projeler HTML5 ve CSS3 standartlarına uygun olarak geliştirilmiştir. Projelerin çalışan hallerini görmek için "Görüntüle" linklerine tıklayabilirsiniz.*
 
-| Hafta | Proje Adı | Durum | Link |
-| :--- | :--- | :---: | :--- |
-| **1. Hafta** | Hakkımda Sayfası | ✅ | [Görüntüle](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme-odevleri/odev-1-hakkimda/index.html) |
-| **2. Hafta** | HTML Tarif Tanıtım | ✅ | [Görüntüle](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme-odevleri/odev-2-html-tarif-tanitim/index.html) |
-| **3. Hafta** | CSS Profil Sayfası | ✅ | [Görüntüle](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme-odevleri/odev-3-css-profil/index.html) |
-| **4. Hafta** | Modern Pricing Table | ✅ | [Görüntüle](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme-odevleri/odev-4-pricing-table/index.html) |
+### 📂 Ödev Listesi ve Erişim Linkleri
+
+| Hafta | Proje Başlığı | Kullanılan Teknolojiler | Durum | Canlı Önizleme |
+| :--- | :--- | :--- | :---: | :--- |
+| **1. Hafta** | Kişisel Hakkımda Sayfası | HTML5, Liste Yapıları | ✅ | [Görüntüle 🔗](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme/odev-1-hakkimda/index.html) |
+| **2. Hafta** | HTML Yemek Tarifi Sitesi | Semantik HTML, Medya Öğeleri | ✅ | [Görüntüle 🔗](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme/odev-2-html-tarif-tanitim/index.html) |
+| **3. Hafta** | CSS Profil Kartı Tasarımı | CSS Flexbox, Box Model | ✅ | [Görüntüle 🔗](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme/odev-3-css-profil/index.html) |
+| **4. Hafta** | Modern Fiyat Tablosu (Pricing Table) | CSS Grid, Hover Effects | ✅ | [Görüntüle 🔗](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme/odev-4-pricing-table/index.html) |
 
 ---
 
 ## ⚛️ JavaScript Frameworkleri (React)
-Bu klasörde modern JS kütüphaneleri ile geliştirdiğim çalışmalar yer almaktadır. 
+Bu bölümde modern frontend mimarisi kullanılarak geliştirilen projeler yer almaktadır.
 
-* **Klasör:** `/js-frameworkleri`
-* **İçerik:** React bileşenleri, State yönetimi ve Hooks örnekleri.
-* **Not:** Bu projeler "build" aşaması gerektirdiği için kaynak kod olarak paylaşılmıştır. İncelemek için klasör içerisindeki `src` dizinine göz atabilirsiniz.
-
----
-
-## 🛠 Kullanılan Teknolojiler
-* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-* **Library:** React.js
-* **Tooling:** Vite, NPM, GitHub Pages
+* **Klasör Adı:** `/js-frameworkleri-odevler`
+* **İçerik:** Bileşen tabanlı tasarım (Component-based design), Props ve State kullanımı.
+* **Not:** Bu projeler derleme (build) işlemi gerektirdiği için kaynak kodları klasör içerisinde mevcuttur. Kodları `/src` dizini altından inceleyebilirsiniz.
 
 ---
 
-## 📬 İletişim
-Eğer projeler hakkında bir sorunuz olursa GitHub üzerinden bana ulaşabilirsiniz.
+## 🛠 Teknik Yetkinlikler
+Geliştirme sürecinde aşağıdaki teknolojiler ve araçlar aktif olarak kullanılmıştır:
+* **Frontend:** HTML5, CSS3 (Flexbox & Grid), JavaScript (ES6+)
+* **Versiyon Kontrol:** Git, GitHub
+* **Yayınlama:** GitHub Pages
 
-**MuhammedEdev** *Web Geliştirici Adayı*
+---
+
+## 👨‍💻 Hakkımda
+Ben **MuhammedEdev**, modern web teknolojileri üzerine kendimi geliştirmekte olan bir geliştirici adayıyım. Bu portfolio, gelişim sürecimin bir yansımasıdır.
+
+---
+© 2026 Muhammed Edev | Tüm Hakları Saklıdır.
