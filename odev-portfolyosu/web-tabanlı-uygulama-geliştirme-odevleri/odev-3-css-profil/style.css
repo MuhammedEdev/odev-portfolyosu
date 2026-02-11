@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 5. Madde: Arka Plan Linear Gradient */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    /* Koyu gece temalı geçiş */
+}
+
+/* 1. Madde: .profile-card div'i */
+.profile-card {
+    background-color: #ffffff;
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* 2. Madde: Tam yuvarlak resim ve renkli kalın border */
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /* Tam yuvarlak */
+    border: 5px solid #3498db;
+    /* Renkli border */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* 3. Madde: Tipografi */
+h2 {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #95a5a6;
+    /* Gri tonlarda unvan */
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.bio {
+    color: #555;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* 4. Madde: Butonlar ve Etkileşim */
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+/* Fare üzerine gelince (:hover) */
+.social-btn:hover {
+    background-color: #2980b9;
+    /* Renk değişimi */
+    transform: translateY(-3px);
+    /* 3px yukarı kalkma */
+}
