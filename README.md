@@ -1,24 +1,36 @@
-# 🚀 Muhammed Edev | Web Geliştirme Portfolyosu
+# 🚀 MUHAMMED EDEV | WEB GELİŞTİRME PORTFOLYOSU
 
-Bu repo, 2025-2026 eğitim dönemi web geliştirme dersi ödevlerini içermektedir.
-
----
-
-## 🌐 Web Tabanlı Uygulama Geliştirme (Canlı Linkler)
-
-Aşağıdaki linklere tıklayarak hazırladığım projelerin çalışan hallerini tarayıcıda görebilirsiniz:
-
-| Hafta | Ödev Adı | Canlı Önizleme |
-| :--- | :--- | :--- |
-| **1. Hafta** | Hakkımda Sayfası | [Projeyi Aç 🔗](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme-odevleri/odev-1-hakkimda/index.html) |
-| **2. Hafta** | HTML Yemek Tarifi | [Projeyi Aç 🔗](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme-odevleri/odev-2-html-tarif-tanitim/index.html) |
-| **3. Hafta** | CSS Profil Kartı | [Projeyi Aç 🔗](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme-odevleri/odev-3-css-profil/index.html) |
-| **4. Hafta** | Modern Pricing Table | [Projeyi Aç 🔗](https://muhammededev.github.io/odev-portfolyosu/web-tabanl%C4%B1-uygulama-geli%C5%9Ftirme-odevleri/odev-4-pricing-table/index.html) |
+Bu depo, 2025-2026 eğitim dönemi boyunca hazırladığım tüm web tasarım ve framework projelerini kapsamaktadır.
 
 ---
 
-## ⚛️ JS Frameworkleri (React)
-*Not: React ödevleri kaynak kod olarak `/js-frameworkleri-odevler` klasöründe yer almaktadır.*
+## 📂 PROJE VE ÖDEV DİZİNLERİ
+
+Tüm kaynak kodlarına aşağıdaki ana klasörler üzerinden erişebilirsiniz:
+
+### 🌐 1. Web Tabanlı Uygulama Geliştirme
+Bu klasörde HTML5 ve CSS3 standartları kullanılarak geliştirilen haftalık ödevler yer almaktadır.
+* **Klasör Adı:** `web-tabanlı-uygulama-geliştirme-odevleri`
+* **İçerik:** Semantik HTML, CSS Flexbox/Grid mizanpajları ve responsive çözümler.
+* **Erişim:** Klasör içindeki haftalık dizinlerden (`odev-1`, `odev-2` vb.) kaynak kodlara ulaşılabilir.
+
+### ⚛️ 2. JavaScript Frameworkleri (React)
+Modern frontend mimarileri ve bileşen tabanlı geliştirme süreçlerini içeren projelerdir.
+* **Klasör Adı:** `js-frameworkleri-odevler`
+* **İçerik:** React.js kütüphanesi, State yönetimi ve dinamik arayüz bileşenleri.
 
 ---
-**MuhammedEdev** | 2026
+
+## 🛠️ TEKNİK DONANIM
+* **Diller:** HTML5, CSS3, JavaScript (ES6+)
+* **Framework:** React.js
+* **Araçlar:** Git, GitHub, VS Code
+
+---
+
+## 📖 ÇALIŞTIRMA VE İNCELEME
+* **Statik Projeler:** İlgili ödev klasöründeki `index.html` dosyasını tarayıcıda açarak görüntüleyebilirsiniz.
+* **React Projeleri:** Proje klasöründe `npm install` ve `npm start` komutlarını kullanarak çalıştırabilirsiniz.
+
+---
+**Geliştirici:** MuhammedEdev | 2026
