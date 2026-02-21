@@ -1,0 +1,183 @@
+/* Sayfa genel ayarları */
+:root {
+    --ana-renk: #0071e3;
+    /* Apple Blue */
+    --arka-plan: #000000;
+    --kart-arka-plan: #1c1c1e;
+    --yazi-ikincil: #86868b;
+    --basari: #34c759;
+    --hata: #ff3b30;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--arka-plan);
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.layout {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Kart tasarımı */
+.main-card {
+    background: var(--kart-arka-plan);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+    margin-bottom: 30px;
+}
+
+.card-header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.card-header p {
+    color: var(--yazi-ikincil);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Input alanları */
+.input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.input-box label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--yazi-ikincil);
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    background: #2c2c2e;
+    border: 1px solid transparent;
+    padding: 16px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: var(--ana-renk);
+}
+
+/* Hesaplama Butonu */
+.action-btn {
+    width: 100%;
+    background: #ffffff;
+    color: #000;
+    border: none;
+    padding: 18px;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action-btn:active {
+    transform: scale(0.98);
+}
+
+/* Sonuç Paneli */
+.result-area {
+    margin-top: 35px;
+    display: none;
+    /* Başlangıçta kapalı */
+}
+
+.line {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 25px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-group span {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--yazi-ikincil);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.stat-group strong {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* Dinamik İlerleme Çubuğu */
+.progress-container {
+    height: 6px;
+    background: #2c2c2e;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* JS ile eklenecek sınıflar */
+.text-success {
+    color: var(--basari);
+}
+
+.text-danger {
+    color: var(--hata);
+}
+
+.bg-success {
+    background: var(--basari);
+}
+
+.bg-danger {
+    background: var(--hata);
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .main-card {
+        padding: 25px;
+    }
+
+    .input-container {
+        grid-template-columns: 1fr;
+    }
+}
