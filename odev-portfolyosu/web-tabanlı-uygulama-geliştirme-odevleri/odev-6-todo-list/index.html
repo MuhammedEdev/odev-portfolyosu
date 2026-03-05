@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gelişmiş, dinamik ve kullanıcı dostu JavaScript Yapılacaklar Listesi. Görevlerinizi kolayca yönetin.">
+    <meta name="author" content="Gemini AI Lab">
+    <title>Gunluk-Plan | Akıllı Görev Yönetimi</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+        <header class="app-header">
+            <h1>Gunluk-Plan </h1>
+            <p id="tarih-ozeti"></p>
+            <div class="istatistik-bari">
+                <span id="tamamlanan-sayisi">0</span> / <span id="toplam-sayisi">0</span> Tamamlandı
+            </div>
+        </header>
+
+        <section class="input-section">
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="Yeni bir görev ekle..." maxlength="50">
+                <button id="add-btn" title="Görevi Ekle">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="list-section">
+            <ul id="todo-list">
+                </ul>
+        </section>
+
+        <footer class="app-footer">
+            <small>İpucu: "Acil" yazarak öncelik ekleyin.</small>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

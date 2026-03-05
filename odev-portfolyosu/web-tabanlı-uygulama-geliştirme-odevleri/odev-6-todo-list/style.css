@@ -1,0 +1,104 @@
+/* Değişken Tanımları */
+:root {
+    --primary: #6366f1;
+    --danger: #ef4444;
+    --success: #10b981;
+    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+
+body {
+    background: var(--bg-gradient);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden; /* Modern görünüm için sabit ekran */
+}
+
+.app-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.app-header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.istatistik-bari { font-size: 0.8rem; color: #94a3b8; margin-bottom: 1.5rem; }
+
+/* Giriş Alanı */
+.input-group {
+    display: flex;
+    background: rgba(0,0,0,0.2);
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    outline: none;
+}
+
+button#add-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button#add-btn:hover { transform: scale(1.05); }
+
+/* Liste ve Animasyonlar */
+ul { 
+    max-height: 300px; 
+    overflow-y: auto; 
+    padding-right: 5px;
+}
+
+/* Scrollbar Tasarımı */
+ul::-webkit-scrollbar { width: 5px; }
+ul::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 10px; }
+
+li {
+    background: var(--glass-bg);
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    animation: slideIn 0.3s ease-out; /* Giriş animasyonu */
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+li.completed { opacity: 0.5; text-decoration: line-through; border-color: transparent; }
+li.priority { border-left: 4px solid var(--danger); background: rgba(239, 68, 68, 0.1); }
+
+.delete-btn { color: #64748b; cursor: pointer; transition: 0.2s; }
+.delete-btn:hover { color: var(--danger); }
+
+/* Responsive Düzenleme */
+@media (max-width: 480px) {
+    .app-container { width: 95%; padding: 1.5rem; }
+}
