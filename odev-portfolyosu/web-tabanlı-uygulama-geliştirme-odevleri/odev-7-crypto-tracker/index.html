@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Market Terminal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <main id="terminal-root">
+        <aside class="sidebar">
+            <nav class="nav-container">
+                <ul class="nav-menu">
+                    <li><button class="nav-btn active" data-target="dashboard"><i data-lucide="layout-grid"></i></button></li>
+                    <li><button class="nav-btn" data-target="markets"><i data-lucide="bar-chart-2"></i></button></li>
+                    <li><button class="nav-btn" data-target="wallet"><i data-lucide="wallet"></i></button></li>
+                    <li><button class="nav-btn" data-target="settings"><i data-lucide="settings"></i></button></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="viewport">
+            <header class="view-header">
+                <article>
+                    <small class="sys-label">● NETWORK_ACTIVE</small>
+                    <h1 id="main-title">Dashboard <span>Live</span></h1>
+                </article>
+                <button id="sync-trigger" class="sync-btn">
+                    <i data-lucide="refresh-cw"></i> <span>SYNC</span>
+                </button>
+            </header>
+
+            <section id="dashboard" class="view-panel active">
+                <section id="coin-feed" class="grid-system"></section>
+            </section>
+
+            <section id="markets" class="view-panel">
+                <article class="content-card">
+                    <h3>Market Intelligence</h3>
+                    <ul class="data-list">
+                        <li><span>Global Vol.</span> <strong>$78.2B</strong></li>
+                        <li><span>Dominance</span> <strong>BTC 52%</strong></li>
+                        <li><span>Sentiment</span> <strong class="up">Bullish</strong></li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="wallet" class="view-panel">
+                <article class="content-card">
+                    <small>TOTAL BALANCE</small>
+                    <h2>$ 14,850.00</h2>
+                    <p class="up">+12.4% THIS MONTH</p>
+                </article>
+            </section>
+
+            <section id="settings" class="view-panel">
+                <form class="settings-ui">
+                    <article class="field">
+                        <label>Base Currency</label>
+                        <select><option>USD</option><option>EUR</option></select>
+                    </article>
+                    <article class="field">
+                        <label>Gateway</label>
+                        <input type="text" value="GAÜN_NODE_01" readonly>
+                    </article>
+                    <button type="button" class="action-btn">UPDATE CONFIG</button>
+                </form>
+            </section>
+
+            <footer class="view-footer">
+                <time id="clock-display">00:00:00</time>
+                <span>Stable</span>
+            </footer>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
