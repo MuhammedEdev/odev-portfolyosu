@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #6366f1;
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+}
+
+.dark {
+  --bg-main: #020617;
+  --bg-card: #0f172a;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border: #1e293b;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+
+body { 
+  background: var(--bg-main); 
+  color: var(--text-main); 
+  height: 100vh; 
+  overflow: hidden; /* Dış ekranın kaymasını engelle, sadece içerik kaysın */
+}
+
+/* ANA YAPI */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* SIDEBAR: Masaüstünde Sol */
+.sidebar {
+  width: 260px;
+  background: var(--bg-card);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.main-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100vh;
+}
+
+header, nav {
+  height: 70px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  flex-shrink: 0;
+}
+
+.content-area {
+  flex: 1;
+  overflow-y: auto; /* Sadece burası kayar */
+  padding: 2rem;
+}
+
+/* KART TASARIMI */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+
+.nav-link.active { background: var(--primary); color: white; }
+
+/* RESPONSIVE FİX: Mobilde her şeyi düzelten kısım */
+@media (max-width: 768px) {
+  .app-layout { 
+    flex-direction: column; 
+  }
+
+  .sidebar {
+    position: fixed; /* Menü alta çivilensin */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    padding: 0 1rem;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* Mobilde Sidebar içindeki gereksizleri gizle */
+  .sidebar .logo-area, 
+  .sidebar span, 
+  .sidebar div[style*="marginTop: auto"] { 
+    display: none !important; 
+  }
+
+  .nav-link {
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
+  .main-view {
+    height: calc(100vh - 70px); /* Menü boyutu kadar alanı eksilt */
+  }
+
+  .content-area {
+    padding: 1.5rem 1rem 5rem 1rem; /* Alttan menü payı bırak */
+  }
+
+  /* Navbar başlığını mobilde gizle veya küçült */
+  nav h3 {
+    font-size: 1rem;
+  }
+}
+
+input {
+  width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--border);
+  background: var(--bg-main); color: var(--text-main); margin-top: 8px; outline: none;
+}
+
+.primary-btn {
+  background: var(--primary); color: white; border: none; padding: 12px 20px;
+  border-radius: 10px; font-weight: 600; cursor: pointer; margin-top: 1rem; width: 100%;
+}
